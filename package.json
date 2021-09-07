@@ -1,6 +1,6 @@
 {
   "name": "react-pricing-plan",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A React Simple and Elegant Price Table or Plans inspired by Pasquale Vitiello",
   "author": "Charles Ejedawe <carlospence@gmail.com>",
   "private": false,
@@ -14,9 +14,7 @@
     "type": "git",
     "url": "https://github.com/carlospence/react-pricing-plan.git"
   },
-  "dependencies": {
-   
-  },
+  "dependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -56,9 +54,6 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "@babel/cli": "^7.15.4",
     "@babel/preset-env": "^7.15.4",
     "@babel/preset-react": "^7.14.5",
@@ -68,6 +63,9 @@
     "@storybook/node-logger": "^6.3.8",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.8",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
     "cross-env": "^7.0.3"
   },
   "peerDependencies": {
