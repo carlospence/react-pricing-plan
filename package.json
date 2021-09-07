@@ -1,7 +1,19 @@
 {
   "name": "react-pricing-plan",
   "version": "0.1.0",
-  "private": true,
+  "description": "A React Simple and Elegant Price Table or Plans inspired by Pasquale Vitiello",
+  "author": "Charles Ejedawe <carlospence@gmail.com>",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlospence/react-pricing-plan.git"
+  },
   "dependencies": {
     "web-vitals": "^1.0.1"
   },
@@ -11,7 +23,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "clean": "rimraf dist",
+    "compile": "yarn clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
   },
   "eslintConfig": {
     "extends": [
