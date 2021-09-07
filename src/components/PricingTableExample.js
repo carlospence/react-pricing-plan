@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import {PricingTable, PricingMenu, PricingMenuItem, PricingMenuItemContent, PricingTableButton} from './index'
 
+import './pricingtable.css';
+
 const basicFeatures = [{name : "Data Analysis", checked : true}, {name : "Unlimited Users", checked : false, strikethrough: true}]
 const standardFeatures = [{name : "Data Analysis", checked : true}, {name : "Unlimited Users", checked : false}]
 const customFeatures = ["Data Insertion", "Unlimited Brands"]

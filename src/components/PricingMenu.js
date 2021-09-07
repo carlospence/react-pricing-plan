@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './pricingtable.css';
 
 
 function PricingMenu({ children, pricingMenuClass, pricingMenuStyle }) {

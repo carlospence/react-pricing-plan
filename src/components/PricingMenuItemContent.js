@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './pricingtable.css';
 
 
 function PricingMenuItemContent({ children, body, footer, header, title, currency, amount, frequency, features,

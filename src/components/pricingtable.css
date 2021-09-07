@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.1px;
@@ -17,18 +17,26 @@ body {
   padding: 48px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-}
+} */
 
-body,
+/* body,
 button,
 input,
 select,
 textarea {
   font-family: "Heebo", sans-serif;
   font-weight: 400;
+} */
+
+.pricing {
+    font-size: 16px;
+    line-height: 24px;
+  letter-spacing: -0.1px;
+    font-family: "Heebo", sans-serif;
+    font-weight: 400; 
 }
 
-.button {
+.pricing  .button {
     display: flex;
     width: 100%;
     font-size: 14px;
