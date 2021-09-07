@@ -30,10 +30,6 @@ textarea {
 
 .pricing {
     font-size: 16px;
-    line-height: 24px;
-  letter-spacing: -0.1px;
-    font-family: "Heebo", sans-serif;
-    font-weight: 400; 
 }
 
 .pricing  .button {

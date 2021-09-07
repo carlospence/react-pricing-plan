@@ -8,7 +8,7 @@ const basicFeatures = [{name : "Data Analysis", checked : true}, {name : "Unlimi
 const standardFeatures = [{name : "Data Analysis", checked : true}, {name : "Unlimited Users", checked : false}]
 const customFeatures = ["Data Insertion", "Unlimited Brands"]
 
-function PricingTableDisplay() {
+function PricingTableDisplay({buttonLabel}) {
 
     const [priceInputValue] = useState("1");
     const [priceInput] = useState({
@@ -72,13 +72,15 @@ function PricingTableDisplay() {
                   </PricingMenuItem>
                   <PricingMenuItem>
                      <PricingMenuItemContent body={ ''} title="Standard" amount="5000" currency="₦" frequency={` /month`} features={standardFeatures} >
-                     <PricingTableButton onClick={() => handleClick("Standard")}></PricingTableButton>
+                     <PricingTableButton label={buttonLabel} onClick={() => handleClick("Standard")}></PricingTableButton>
                      </PricingMenuItemContent>
                     
                   </PricingMenuItem>
                   <PricingMenuItem>
                      <PricingMenuItemContent body={ ''} title="Custom" amount="15000" currency="₦" frequency={` /month`} features={customFeatures} >
-                     <PricingTableButton onClick={() => handleClick("Custom")}></PricingTableButton>
+                     <PricingTableButton label="Sign up" onClick={() => handleClick("Custom")}>
+                         
+                     </PricingTableButton>
                      </PricingMenuItemContent>
                     
                   </PricingMenuItem>
@@ -92,11 +94,12 @@ export default PricingTableDisplay
 
 PricingTableDisplay.propTypes = {
     // backgroundColor: PropTypes.string,
-    // label: PropTypes.string.isRequired,
+    buttonLabel: PropTypes.string.isRequired,
     // onClick: PropTypes.func,
 };
 
 PricingTableDisplay.defaultProps = {
     // backgroundColor: null,
     // onClick: undefined,
+    buttonLabel: "Buy Now"
 };

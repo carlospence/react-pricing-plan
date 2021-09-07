@@ -6,7 +6,7 @@ export default function PricingTableButton({ children, label, url, buttonClass, 
    
     <div className={buttonClass} onClick={onClick}>
       <a className="button" href={url}>
-      {label && label ? label : children}
+      {children && children !== undefined ? children : label && label ? label : ""}
       </a>
     </div>
   );
