@@ -50,7 +50,9 @@ var standardFeatures = [{
 }];
 var customFeatures = ["Data Insertion", "Unlimited Brands"];
 
-function PricingTableDisplay() {
+function PricingTableDisplay(_ref) {
+  var buttonLabel = _ref.buttonLabel;
+
   var _useState = (0, _react.useState)("1"),
       _useState2 = _slicedToArray(_useState, 1),
       priceInputValue = _useState2[0];
@@ -107,7 +109,12 @@ function PricingTableDisplay() {
     alert("".concat(title, " Plan Selected"));
   };
 
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_index.PricingTable, null, /*#__PURE__*/_react.default.createElement(_index.PricingMenu, null, /*#__PURE__*/_react.default.createElement(_index.PricingMenuItem, null, /*#__PURE__*/_react.default.createElement(_index.PricingMenuItemContent, {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_index.PricingTable, null, /*#__PURE__*/_react.default.createElement(_index.PricingMenu, null, /*#__PURE__*/_react.default.createElement(_index.PricingMenuItem, {
+    style: {
+      flexBasis: "344px",
+      maxWidth: "344px"
+    }
+  }, /*#__PURE__*/_react.default.createElement(_index.PricingMenuItemContent, {
     body: '',
     title: "Basic",
     amount: "FREE",
@@ -124,6 +131,7 @@ function PricingTableDisplay() {
     frequency: " /month",
     features: standardFeatures
   }, /*#__PURE__*/_react.default.createElement(_index.PricingTableButton, {
+    label: buttonLabel,
     onClick: function onClick() {
       return handleClick("Standard");
     }
@@ -135,6 +143,7 @@ function PricingTableDisplay() {
     frequency: " /month",
     features: customFeatures
   }, /*#__PURE__*/_react.default.createElement(_index.PricingTableButton, {
+    label: "Sign up",
     onClick: function onClick() {
       return handleClick("Custom");
     }
@@ -143,10 +152,13 @@ function PricingTableDisplay() {
 
 var _default = PricingTableDisplay;
 exports.default = _default;
-PricingTableDisplay.propTypes = {// backgroundColor: PropTypes.string,
-  // label: PropTypes.string.isRequired,
-  // onClick: PropTypes.func,
+PricingTableDisplay.propTypes = {
+  // backgroundColor: PropTypes.string,
+  buttonLabel: _propTypes.default.string.isRequired // onClick: PropTypes.func,
+
 };
-PricingTableDisplay.defaultProps = {// backgroundColor: null,
+PricingTableDisplay.defaultProps = {
+  // backgroundColor: null,
   // onClick: undefined,
+  buttonLabel: "Buy Now"
 };

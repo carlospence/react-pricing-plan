@@ -64,9 +64,9 @@ function PricingTableDisplay({buttonLabel}) {
         <div>
           <PricingTable>
               <PricingMenu>
-                  <PricingMenuItem>
+                  <PricingMenuItem style={{flexBasis: "344px", maxWidth: "344px"}}>
                      
-                     <PricingMenuItemContent body={''} title="Basic" amount="FREE" features={basicFeatures}>
+                     <PricingMenuItemContent  body={''} title="Basic" amount="FREE" features={basicFeatures}>
                      <PricingTableButton onClick={() => handleClick("Basic")}></PricingTableButton>
                      </PricingMenuItemContent>
                   </PricingMenuItem>

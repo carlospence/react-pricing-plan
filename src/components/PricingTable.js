@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-function PricingTable({ children, higlightColor, pricingTableClass, pricingTableStyle }) {
+function PricingTable({ children, higlightColor, pricingTableClass, pricingTableStyle, ...props }) {
 
     return (
-        <div className={pricingTableClass} style={pricingTableStyle}>
+        <div className={pricingTableClass} style={pricingTableStyle} {...props}>
            {children}
         </div>
     );

@@ -23,7 +23,7 @@ function PricingTableButton(_ref) {
   }, /*#__PURE__*/_react.default.createElement("a", {
     className: "button",
     href: url
-  }, label && label ? label : children));
+  }, children && children !== undefined ? children : label && label ? label : ""));
 }
 
 PricingTableButton.propTypes = {

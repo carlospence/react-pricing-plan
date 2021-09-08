@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-function PricingMenu({ children, pricingMenuClass, pricingMenuStyle }) {
+function PricingMenu({ children, pricingMenuClass, pricingMenuStyle, ...props }) {
 
     return (
-        <div className={pricingMenuClass} style={pricingMenuStyle}>
+        <div className={pricingMenuClass} style={pricingMenuStyle} {...props}>
          {children}
         </div>
     );

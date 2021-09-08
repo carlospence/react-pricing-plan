@@ -28,7 +28,7 @@ function PricingMenuItemContent({ children, body, footer, header, title, currenc
             <div className={pricingItemFeaturesClass}>
                 <ul className={pricingItemFeaturesListClass}>
                   {features && features.map(x => {
-                      return <li className={x.checked ? `is-checked` : x.strikethrough ? 'text-line-through' : x ? 'is-checked' : ''}>{x.name ? x.name : x}</li>
+                      return <li key={x.name ? x.name : x} className={x.checked ? `is-checked` : x.strikethrough ? 'text-line-through' : x ? 'is-checked' : ''}>{x.name ? x.name : x}</li>
                   })}
                 </ul>
             </div>
